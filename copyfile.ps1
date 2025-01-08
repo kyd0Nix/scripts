@@ -29,7 +29,7 @@ try {
     Copy-Item -Path $sourceFile -Destination $destinationFile -Force
 
     # Si la copia es exitosa, escribir mensaje en el archivo de log
-    $logMessage = "$logTimestamp - Éxito: Archivo copiado a $destinationFile"
+    $logMessage = "$timestamp - Éxito: Archivo copiado a $destinationFile"
     Add-Content -Path $logFile -Value $logMessage
 } catch {
     # Si ocurre un error, escribir el mensaje de error en el archivo de log
